@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1>My Portfolio</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>KMUTT CPE37 Student</p>
+                    <h1>Hello, I'm <span>Patrik</span> !<br>Welcome to my portfolio!</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Hello, I'm Patrik.I'm from Hua-Hin,southern part of Thailand.
+                        I'm a First year student at KMUTT. Also, I like to crack jokes with my friends.
+                        
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="Education">
+            <div class="container">
+                <div class="header">Education</div>
+                <div class="row">
+                    <div class="education1">
+                        <img src="images/logoHV.png" alt="Hua-Hin Vittayalai">
+                    </div>
+                    <div class="education1-text">
+                        <h1>
+                            <a href="http://www.hv.ac.th/"> Hua-Hin Vittayalai</a>
+                        </h1>
+                        <p>From Grade 1 to Grade 12</p>
+                    </div>
+
+                    <div class="education2">
+                        <img src="images/kmuttlogo.png" alt="KMUTT">
+                    </div>
+                    <div class="education2-text">
+                        <h1>
+                            <a href="https://www.kmutt.ac.th/">KMUTT</a>
+                        </h1>
+                        <p>Freshman to Now</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="skill" id="skill">
+        <h1>Skills</h1>
+        <div class="main">
+            
+            <div class="card">
+                <i class="fa-solid fa-c"></i>
+                <h3>Beginner C</h3>
+                <ul>
+                    <li>Basics</li>
+                    <li>Iteration</li>
+                    <li>Function</li>
+                </ul>
+    
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-guitar"></i>
+                <h3>Guitar</h3>
+                <ul>
+                    <li>Basics</li>
+                    <li>Strumming patterns</li>
+                    <li>Some songs</li>
+                    
+                </ul>
+    
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-comment"></i>
+                <h3>Communication</h3>
+                <ul>
+                    <li>Crack jokes</li>
+                    <li>Active listening</li>
+                    <li>Negotiation and persuasion</li>
+                </ul>
+    
+            </div>
+        </div>
+    
+        </div>
+    
+    </section>
+    <!-------contact---------->
+    <section>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>contact@exmaple.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg">hello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer>
+    <h5>Patrik Stamm @ KMUTT 2023</h5>
+</footer>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby1MAU3rVm_Ou-OfrMfCaQinnJ0a2saC15y5djAUqGeui8SFfkk0Csb-ZOArprhpz23/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+
+</html>
